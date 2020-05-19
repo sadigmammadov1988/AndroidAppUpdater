@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
-apply from: 'signing_confs/conf.gradle'
+//apply from: 'signing_confs/conf.gradle'
 
 
 android {
@@ -21,13 +21,13 @@ android {
         release {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), '../proguard-rules-android-app-updater.pro'
-            signingConfig signingConfigs.defaultSigningConf
+            //signingConfig signingConfigs.defaultSigningConf
         }
 
         debug {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), '../proguard-rules-android-app-updater.pro'
-            signingConfig signingConfigs.defaultSigningConf
+            //signingConfig signingConfigs.defaultSigningConf
         }
     }
 
